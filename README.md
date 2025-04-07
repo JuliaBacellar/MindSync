@@ -1,4 +1,5 @@
 <h2 align="center">Protótipo inicial</h2>
-![image](https://github.com/user-attachments/assets/6031adef-11c2-4c3a-b77e-8185d11a5481)
 
+
+![image](https://github.com/user-attachments/assets/d26c75d1-ea4e-4d76-9c5b-29e3cf1cf930)
 
