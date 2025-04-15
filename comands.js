@@ -102,3 +102,10 @@
 //     "exp": ...
 //   }
 // }
+// npm install bcryptjs jsonwebtoken dotenv
+// npm install express prisma @prisma/client mysql2
+
+// npx prisma db pull - le o banco existente e gera o schema automaticamente 
+//npx prisma studio
+//npm install -g prisma
+// sincroniza com o banco de dados sem nenhuma alteração - npx prisma db push

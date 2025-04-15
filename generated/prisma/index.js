@@ -123,7 +123,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "C:\\Users\\49774682874\\2 semestre\\TCC - Cotuca\\JWT\\project-root\\generated\\prisma",
+      "value": "C:\\Users\\49774682874\\MindSync\\generated\\prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -137,7 +137,7 @@ const config = {
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "C:\\Users\\49774682874\\2 semestre\\TCC - Cotuca\\JWT\\project-root\\prisma\\schema.prisma",
+    "sourceFilePath": "C:\\Users\\49774682874\\MindSync\\prisma\\schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
