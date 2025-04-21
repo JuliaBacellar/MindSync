@@ -8,18 +8,16 @@ PostgreSQL(Neon.Tech)
 Autenticação por senha + OTP por email
 
 
-##Funcionalidades
+## Funcionalidades
 - Registro de usuario com senha criptografada
 - Envio de código OTP por e-mail
 - Estrutura MV
 - Banco de dados PostgreSQL
 - Conexão via lib 'pg'
+- Marca o usuario como verificado no banco
+- Só deixa logar se o usuario estiver verificado
+- Implementa a senha criptografada com bcrypt
 
-Próximas
-verificação do código
-marca o usuario como verificado no banco
-só deixa logar se o usuario estiver verificado
-implementa a senha criptografada com bcrypt
 ##Rotas
 ## POST /api/auth/register
 Registra um novo usuário
