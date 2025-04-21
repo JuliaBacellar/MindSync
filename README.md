@@ -1,7 +1,7 @@
 #Backend - MindSync
 
 
-Techs 
+## Techs 
 
 Node.js + Express (estrutura MVC)
 PostgreSQL(Neon.Tech)
@@ -18,7 +18,7 @@ Autenticação por senha + OTP por email
 - Só deixa logar se o usuario estiver verificado
 - Implementa a senha criptografada com bcrypt
 
-##Rotas
+
 ## POST /api/auth/register
 Registra um novo usuário
 
