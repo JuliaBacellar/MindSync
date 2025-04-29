@@ -33,13 +33,19 @@ npm install
 node server.js
 
 http://localhost:3000/api/auth/register
+http://localhost:3000/auth/login
+http://localhost:3000/auth/verify-otp
 neon salva as contas
 {
 "email":"...",
 "password":"..."
 }
 
-
+{
+"email":"...",
+"otp":"..."
 }
+editar arquivo .env
+requisição post
 
 
