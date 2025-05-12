@@ -1,0 +1,6 @@
+PORT = 3000
+
+DATABASE_URL = postgresql...
+
+EMAIL_USER = ..
+EMAIL_PASS = ....
