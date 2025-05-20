@@ -8,7 +8,7 @@ function gerarOTP() {
 }
 
 exports.register = async (req, res) => {
-  const { email, password } = req.body;
+  const {name, email, password } = req.body;
 
   try {
     // Verifica se já existe usuário
@@ -26,8 +26,8 @@ exports.register = async (req, res) => {
 
     // Insere usuário no banco
     await pool.query(
-      'INSERT INTO users (email, password, otp, otp_expiry) VALUES ($1, $2, $3, $4)',
-      [email, hashedPassword, otp, otp_expiry]
+      'INSERT INTO users (name, email, password, otp, otp_expiry) VALUES ($1, $2, $3, $4, $5)',
+      [name, email, hashedPassword, otp, otp_expiry]
     );
 
     // Envia OTP por e-mail
@@ -41,7 +41,7 @@ exports.register = async (req, res) => {
 };
 
 exports.verifyOTP = async (req, res) => {
-  const { email, otp } = req.body;
+  const { name, email, otp } = req.body;
   const emailClean = email.trim().toLowerCase();
 
   try {
@@ -94,7 +94,7 @@ exports.login = async (req, res) => {
       return res.status(401).json({ message: 'Senha incorreta' });
     }
 
-    return res.status(200).json({ message: 'Login realizado com sucesso', user: { id: user.id, email: user.email } });
+    return res.status(200).json({ message: 'Login realizado com sucesso', user: { name: user.name, id: user.id, email: user.email } });
   } catch (err) {
     console.error(err);
     res.status(500).json({ message: 'Erro no login' });

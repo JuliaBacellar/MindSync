@@ -12,7 +12,7 @@ const app = express(); //cria o app express
 app.use(cors()); //libera o acesso a requisições
 app.use(express.json()); //leitura json
 
-app.use('/auth', authRoutes); //todas as rotas de auth começam com api/auth
+app.use('/auth', authRoutes); //todas as rotas de auth começam com /auth
 app.use('/diary', diaryRoutes);  //todas as rotas do diário começam com diário
 
 
