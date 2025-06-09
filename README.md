@@ -49,3 +49,16 @@ editar arquivo .env
 requisição post
 
 
+-----
+reações -
+ user clica em um emojie envia uma requisição post /emotion com o {
+    'user_id':1,
+    'emotion_type': 'feliz'
+ }
+
+ salva no bd a emoção do dia 
+
+ quando o user abre o gráfico o front faz uma requisição GET para o back  na rota /emotion
+
+ o back responde com o tipo de emoção e o total  de vezes
+ 
